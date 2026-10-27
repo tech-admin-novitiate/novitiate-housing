@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Building2, ShieldCheck, Briefcase, KeyRound, CheckCircle2, ArrowRight, Calculator, FileCheck, Users, HelpCircle } from 'lucide-react';
+import { Building2, ShieldCheck, Briefcase, KeyRound, CheckCircle2, ArrowRight, Calculator, FileCheck, Users, HelpCircle, XCircle } from 'lucide-react';
 import { Property } from '../types';
 import { PropertyVisual } from './PropertyVisual';
 
@@ -288,65 +288,121 @@ export const HomeMarketing: React.FC<HomeMarketingProps> = ({
 
       {/* Comparison Matrix: Traditional Brokerage vs Novitiate Housing */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-neutral-900 text-white rounded-2xl shadow-xl overflow-hidden border border-neutral-800">
+        <div className="bg-white rounded-2xl shadow-sm border border-neutral-200/90 overflow-hidden">
           {/* Trademark 4-Color Gradient Accent Line */}
           <div className="h-1.5 w-full bg-gradient-to-r from-[#F59415] via-[#E84144] via-[#5C96D2] to-[#72A346]" />
-          
+
           <div className="p-6 sm:p-10">
+            {/* Header */}
             <div className="max-w-3xl mb-8 space-y-2">
               <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#F59415] uppercase tracking-wider">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#F59415]" />
+                <span className="w-2 h-2 rounded-full bg-[#F59415]" />
                 <span>The Structural Difference</span>
               </div>
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
                 Why Housing Societies & Homeowners Switch to Novitiate
               </h2>
-              <p className="text-sm text-neutral-400">
-                Unorganized real estate brokerage ignores housing society by-laws, leading to friction, gatekeeper disputes, and legal entanglements. Here is how we fix it.
+              <p className="text-sm sm:text-base text-neutral-600 leading-relaxed">
+                Traditional brokerage ignores cooperative housing society by-laws, leading to NOC rejections, dispute delays, and compliance risks. Here is how our institutional platform compares.
               </p>
             </div>
 
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm border-collapse">
-              <thead>
-                <tr className="border-b border-neutral-800 text-xs font-semibold text-neutral-400 uppercase tracking-wider">
-                  <th className="py-3 px-4">Transaction Dimension</th>
-                  <th className="py-3 px-4 text-neutral-500">Traditional Brokerage</th>
-                  <th className="py-3 px-4 text-amber-300">Novitiate Housing Platform</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-neutral-800/80 text-xs sm:text-sm">
-                <tr>
-                  <td className="py-3.5 px-4 font-semibold text-neutral-200">Society NOC Processing</td>
-                  <td className="py-3.5 px-4 text-neutral-400">Treated as an afterthought; frequent rejections & committee delays (3–6 weeks)</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-400">Pre-cleared with managing committee; 48-hour standardized turnaround</td>
-                </tr>
-                <tr>
-                  <td className="py-3.5 px-4 font-semibold text-neutral-200">Tenant Credential Verification</td>
-                  <td className="py-3.5 px-4 text-neutral-400">Surface ID check only; no workplace or previous landlord reference checks</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-400">Multi-point background vetting + mandatory employer and past society verification</td>
-                </tr>
-                <tr>
-                  <td className="py-3.5 px-4 font-semibold text-neutral-200">Tenancy Tenure Stability</td>
-                  <td className="py-3.5 px-4 text-neutral-400">Volatile 11-month turnover; high society maintenance disruption & wear</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-400">Structured 2–3 year long-term stability with formal renewal governance</td>
-                </tr>
-                <tr>
-                  <td className="py-3.5 px-4 font-semibold text-neutral-200">Agent Network Collaboration</td>
-                  <td className="py-3.5 px-4 text-neutral-400">Hostile gatekeeping, zero transparency, disputes over commission shares</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-400">Verified MahaRERA co-brokering charter with guaranteed 50/50 splits</td>
-                </tr>
-                <tr>
-                  <td className="py-3.5 px-4 font-semibold text-neutral-200">Legal Compliance</td>
-                  <td className="py-3.5 px-4 text-neutral-400">Informal stamp papers, missing police intimation receipts</td>
-                  <td className="py-3.5 px-4 font-medium text-emerald-400">100% digital registered leave & license + certified police acknowledgement</td>
-                </tr>
-              </tbody>
-            </table>
+            {/* 2-Column Comparison Matrix: Traditional vs Novitiate Housing */}
+            <div className="space-y-4">
+              {/* Column Legend Header */}
+              <div className="grid grid-cols-2 gap-3 sm:gap-6 pb-3 border-b border-neutral-200">
+                <div className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl bg-neutral-50 border border-neutral-200/80">
+                  <div className="w-7 h-7 rounded-lg bg-red-100 text-[#E84144] flex items-center justify-center shrink-0">
+                    <XCircle className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                  </div>
+                  <div>
+                    <div className="text-xs sm:text-sm font-bold text-neutral-900">
+                      Traditional Brokerage
+                    </div>
+                    <div className="text-[11px] text-neutral-500 hidden sm:block">
+                      Fragmented, uncoordinated, high friction
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl bg-[#72A346]/5 border border-[#72A346]/25">
+                  <div className="w-7 h-7 rounded-lg bg-[#72A346]/15 text-[#72A346] flex items-center justify-center shrink-0">
+                    <CheckCircle2 className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
+                  </div>
+                  <div>
+                    <div className="text-xs sm:text-sm font-bold text-neutral-900">
+                      Novitiate Housing Platform
+                    </div>
+                    <div className="text-[11px] text-[#72A346] font-medium hidden sm:block">
+                      Pre-cleared NOCs, vetted & institutional
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Comparison Cards: Filtered to only 01, 02, 03 */}
+              <div className="space-y-3.5 pt-1">
+                {[
+                  {
+                    num: '01',
+                    dimension: 'Society NOC Processing',
+                    traditional: 'Treated as an afterthought; frequent rejections & committee delays (3–6 weeks).',
+                    novitiate: 'Pre-cleared directly with society managing committee; 48-hour standardized turnaround.',
+                  },
+                  {
+                    num: '02',
+                    dimension: 'Tenant Credential Verification',
+                    traditional: 'Surface ID check only; no workplace, past landlord, or society track-record verification.',
+                    novitiate: 'Multi-point background vetting + mandatory employer and past society reference clearance.',
+                  },
+                  {
+                    num: '03',
+                    dimension: 'Legal & Statutory Compliance',
+                    traditional: 'Informal stamp papers, unverified terms, and missing police intimation receipts.',
+                    novitiate: '100% digital registered leave & license agreements + certified police acknowledgement receipts.',
+                  },
+                ].map((item) => (
+                  <div
+                    key={item.num}
+                    className="bg-neutral-50/70 hover:bg-neutral-50 rounded-xl p-4 sm:p-5 border border-neutral-200/90 transition-all space-y-3"
+                  >
+                    {/* Transaction Dimension as Prominent Header */}
+                    <div className="flex items-center gap-2.5">
+                      <span className="text-xs font-mono font-bold text-[#F59415] bg-[#F59415]/10 border border-[#F59415]/20 px-2 py-0.5 rounded-md">
+                        {item.num}
+                      </span>
+                      <h3 className="text-sm sm:text-base font-bold text-neutral-900 tracking-tight">
+                        {item.dimension}
+                      </h3>
+                    </div>
+
+                    {/* 2 Columns: Traditional vs Novitiate Housing */}
+                    <div className="grid grid-cols-2 gap-3 sm:gap-6 text-xs sm:text-sm">
+                      {/* Column 1: Traditional Brokerage */}
+                      <div className="p-3.5 sm:p-4 rounded-xl bg-white border border-neutral-200/80 text-neutral-600 leading-relaxed shadow-2xs flex flex-col justify-between">
+                        <div className="text-[10px] font-bold text-red-600 uppercase tracking-wider mb-1.5 flex items-center gap-1">
+                          <XCircle className="w-3 h-3 text-red-500 shrink-0" />
+                          <span>Traditional</span>
+                        </div>
+                        <p className="text-neutral-600">{item.traditional}</p>
+                      </div>
+
+                      {/* Column 2: Novitiate Housing */}
+                      <div className="p-3.5 sm:p-4 rounded-xl bg-[#72A346]/5 border border-[#72A346]/30 text-neutral-900 leading-relaxed shadow-2xs flex flex-col justify-between">
+                        <div className="text-[10px] font-bold text-[#72A346] uppercase tracking-wider mb-1.5 flex items-center gap-1">
+                          <CheckCircle2 className="w-3 h-3 text-[#72A346] shrink-0" />
+                          <span>Novitiate Housing</span>
+                        </div>
+                        <p className="font-medium text-neutral-800">{item.novitiate}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
       {/* Interactive Society Tenancy Calculator */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
