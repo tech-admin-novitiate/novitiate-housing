@@ -1,9 +1,10 @@
-name: Build and Deploy to Hostinger
+name: Build and Deploy
 
 on:
   push:
     branches:
       - main
+      - production
   workflow_dispatch:
 
 jobs:
@@ -19,16 +20,28 @@ jobs:
           node-version: 22
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install --force
 
       - name: Build Production Assets
         run: npm run build
 
-      - name: Deploy to Hostinger via FTP
+      - name: Route Staging vs Live
+        id: target-dir
+        run: |
+          if [ "${{ github.ref }}" = "refs/heads/production" ]; then
+            echo "Targeting PRODUCTION (Live site)"
+            echo "dir=/public_html/" >> $GITHUB_OUTPUT
+          else
+            echo "Targeting STAGING (Subdomain)"
+            echo "dir=/public_html/staging/" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Deploy via FTPS
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          protocol: ftps
           local-dir: ./dist/
-          server-dir: /public_html/
+          server-dir: ${{ steps.target-dir.outputs.dir }}
