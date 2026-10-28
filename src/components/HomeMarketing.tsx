@@ -469,7 +469,7 @@ export const HomeMarketing: React.FC<HomeMarketingProps> = ({
                 <div>
                   <div className="flex justify-between text-xs font-semibold text-neutral-700 mb-1">
                     <span>Monthly Rent per Household</span>
-                    <span className="font-mono text-[#72A346] font-bold">
+                    <span className="font-mono">
                       ₹{monthlyRent.toLocaleString('en-IN')} / mo
                     </span>
                   </div>
@@ -480,7 +480,7 @@ export const HomeMarketing: React.FC<HomeMarketingProps> = ({
                     step="1000"
                     value={monthlyRent}
                     onChange={(e) => setMonthlyRent(Number(e.target.value))}
-                    className="w-full accent-[#72A346] cursor-pointer"
+                    className="w-full accent-neutral-900 cursor-pointer"
                   />
                   <div className="flex justify-between text-[10px] text-neutral-400 mt-0.5">
                     <span>₹1,000</span>
