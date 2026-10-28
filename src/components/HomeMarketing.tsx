@@ -19,10 +19,12 @@ export const HomeMarketing: React.FC<HomeMarketingProps> = ({
   // Interactive Society Tenancy Savings Calculator
   const [flatCount, setFlatCount] = useState<number>(60);
   const [turnoverRate, setTurnoverRate] = useState<number>(20); // 20% annual tenant turnover
+  const [monthlyRent, setMonthlyRent] = useState<number>(25000); // Monthly rent per household (1000 to 150000 INR)
 
   const annualTenancies = Math.round((flatCount * turnoverRate) / 100);
   const estimatedAdminHoursSaved = annualTenancies * 18; // 18 hrs saved in police verification, reference checks, committee meetings
-  const savedDisputeCost = annualTenancies * 12500; // estimated ₹ saved in unpaid dues, legal notices, and delayed NOC fees
+  // Estimated ₹ saved in unpaid dues, legal notices, security deposit friction, and delayed NOCs
+  const savedDisputeCost = Math.round(annualTenancies * (monthlyRent * 0.5));
 
   return (
     <div className="space-y-20 pb-20">
@@ -434,8 +436,13 @@ export const HomeMarketing: React.FC<HomeMarketingProps> = ({
                     step="5"
                     value={flatCount}
                     onChange={(e) => setFlatCount(Number(e.target.value))}
-                    className="w-full accent-neutral-900"
+                    className="w-full accent-neutral-900 cursor-pointer"
                   />
+                  <div className="flex justify-between text-[10px] text-neutral-400 mt-0.5">
+                    <span>15 units</span>
+                    <span>150 units</span>
+                    <span>300 units</span>
+                  </div>
                 </div>
 
                 <div>
@@ -450,8 +457,36 @@ export const HomeMarketing: React.FC<HomeMarketingProps> = ({
                     step="5"
                     value={turnoverRate}
                     onChange={(e) => setTurnoverRate(Number(e.target.value))}
-                    className="w-full accent-neutral-900"
+                    className="w-full accent-neutral-900 cursor-pointer"
                   />
+                  <div className="flex justify-between text-[10px] text-neutral-400 mt-0.5">
+                    <span>5%</span>
+                    <span>25%</span>
+                    <span>50%</span>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex justify-between text-xs font-semibold text-neutral-700 mb-1">
+                    <span>Monthly Rent per Household</span>
+                    <span className="font-mono text-[#72A346] font-bold">
+                      ₹{monthlyRent.toLocaleString('en-IN')} / mo
+                    </span>
+                  </div>
+                  <input
+                    type="range"
+                    min="1000"
+                    max="150000"
+                    step="1000"
+                    value={monthlyRent}
+                    onChange={(e) => setMonthlyRent(Number(e.target.value))}
+                    className="w-full accent-[#72A346] cursor-pointer"
+                  />
+                  <div className="flex justify-between text-[10px] text-neutral-400 mt-0.5">
+                    <span>₹1,000</span>
+                    <span>₹75,000</span>
+                    <span>₹1,50,000</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -478,7 +513,9 @@ export const HomeMarketing: React.FC<HomeMarketingProps> = ({
                 <div className="p-4 bg-white rounded-lg border border-neutral-200/60 shadow-xs">
                   <div className="text-xs text-neutral-500 font-medium">Estimated Dispute Loss Saved</div>
                   <div className="text-2xl font-bold text-[#72A346] font-mono tabular-nums mt-1">
-                    ₹{(savedDisputeCost / 1000).toFixed(0)}k
+                    {savedDisputeCost >= 100000
+                      ? `₹${(savedDisputeCost / 100000).toFixed(2)} Lakh`
+                      : `₹${(savedDisputeCost / 1000).toFixed(0)}k`}
                   </div>
                   <div className="text-[11px] text-neutral-400 mt-1">Dues & legal friction</div>
                 </div>
