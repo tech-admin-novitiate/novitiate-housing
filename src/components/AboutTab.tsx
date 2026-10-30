@@ -14,7 +14,7 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
       <div className="bg-white rounded-2xl border border-neutral-200 p-8 sm:p-10 shadow-xs flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="space-y-4 max-w-2xl">
           <div className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-neutral-500">
-            <span className="w-2 h-2 rounded-full bg-[#E84144]" />
+            <span className="w-2 h-2 rounded-full bg-[#FF3A42]" />
             <span>Corporate Identity & Mission</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-neutral-900 tracking-tight leading-tight [text-wrap:balance]">
@@ -35,12 +35,12 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         {/* Coral Red Fact */}
-        <div className="bg-white rounded-xl border border-neutral-200 p-6 shadow-xs space-y-2 hover:border-[#E84144] transition-colors group">
-          <div className="w-10 h-10 rounded-lg bg-rose-50 text-[#E84144] flex items-center justify-center font-bold mb-3">
+        <div className="bg-white rounded-xl border border-neutral-200 p-6 shadow-xs space-y-2 hover:border-[#FF3A42] transition-colors group">
+          <div className="w-10 h-10 rounded-lg bg-rose-50 text-[#FF3A42] flex items-center justify-center font-bold mb-3">
             <Building2 className="w-5 h-5" />
           </div>
           <div className="text-xs text-neutral-500 font-semibold uppercase">Registered Entity</div>
-          <div className="text-base font-bold text-neutral-900 group-hover:text-[#E84144] transition-colors">Novitiate Housing Private Limited</div>
+          <div className="text-base font-bold text-neutral-900 group-hover:text-[#FF3A42] transition-colors">Novitiate Housing Private Limited</div>
           <p className="text-xs text-neutral-600 leading-relaxed pt-1">
             Registered with ROC Mumbai under the Ministry of Corporate Affairs, Government of India.
           </p>
@@ -50,31 +50,31 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
         </div>
 
         {/* Sky Blue Fact */}
-        <div className="bg-white rounded-xl border border-neutral-200 p-6 shadow-xs space-y-2 hover:border-[#5C96D2] transition-colors group">
-          <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#5C96D2] flex items-center justify-center font-bold mb-3">
+        <div className="bg-white rounded-xl border border-neutral-200 p-6 shadow-xs space-y-2 hover:border-[#89AFE0] transition-colors group">
+          <div className="w-10 h-10 rounded-lg bg-blue-50 text-[#89AFE0] flex items-center justify-center font-bold mb-3">
             <MapPin className="w-5 h-5" />
           </div>
           <div className="text-xs text-neutral-500 font-semibold uppercase">Headquarters</div>
-          <div className="text-base font-bold text-neutral-900 group-hover:text-[#5C96D2] transition-colors">Vasai, Maharashtra</div>
+          <div className="text-base font-bold text-neutral-900 group-hover:text-[#89AFE0] transition-colors">Vasai, Maharashtra</div>
           <p className="text-xs text-neutral-600 leading-relaxed pt-1">
             Deep roots in the fast-growing Vasai-Virar, Palghar, Thane, and Mumbai Western suburban residential corridors.
           </p>
-          <div className="text-[11px] font-mono text-[#5C96D2] font-semibold pt-2 border-t border-neutral-100">
+          <div className="text-[11px] font-mono text-[#89AFE0] font-semibold pt-2 border-t border-neutral-100">
             Serving 180+ Active Societies
           </div>
         </div>
 
         {/* Leaf Green Fact */}
-        <div className="bg-white rounded-xl border border-neutral-200 p-6 shadow-xs space-y-2 hover:border-[#72A346] transition-colors group">
-          <div className="w-10 h-10 rounded-lg bg-emerald-50 text-[#72A346] flex items-center justify-center font-bold mb-3">
+        <div className="bg-white rounded-xl border border-neutral-200 p-6 shadow-xs space-y-2 hover:border-[#8EB36D] transition-colors group">
+          <div className="w-10 h-10 rounded-lg bg-emerald-50 text-[#8EB36D] flex items-center justify-center font-bold mb-3">
             <ShieldCheck className="w-5 h-5" />
           </div>
           <div className="text-xs text-neutral-500 font-semibold uppercase">Compliance Framework</div>
-          <div className="text-base font-bold text-neutral-900 group-hover:text-[#72A346] transition-colors">MahaRERA & MCS Act</div>
+          <div className="text-base font-bold text-neutral-900 group-hover:text-[#8EB36D] transition-colors">MahaRERA & MCS Act</div>
           <p className="text-xs text-neutral-600 leading-relaxed pt-1">
             Strict adherence to the Maharashtra Co-operative Societies Act 1960 model by-laws and MahaRERA guidelines.
           </p>
-          <div className="text-[11px] font-mono text-[#72A346] font-semibold pt-2 border-t border-neutral-100">
+          <div className="text-[11px] font-mono text-[#8EB36D] font-semibold pt-2 border-t border-neutral-100">
             100% Lawful NOC Procedures
           </div>
         </div>
@@ -83,12 +83,12 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
 
       {/* Trademark Brand Identity & Color Spectrum Section */}
       <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden shadow-xs">
-        <div className="h-1.5 w-full bg-gradient-to-r from-[#F59415] via-[#E84144] via-[#5C96D2] to-[#72A346]" />
+        <div className="h-1.5 w-full bg-gradient-to-r from-[#FDAB2B] via-[#FF3A42] via-[#89AFE0] to-[#8EB36D]" />
         
         <div className="p-8 sm:p-10 space-y-8">
           <div className="max-w-3xl space-y-2">
-            <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#E84144] uppercase tracking-wider">
-              <span className="w-2 h-2 rounded-full bg-[#E84144]" />
+            <div className="inline-flex items-center gap-2 text-xs font-semibold text-[#FF3A42] uppercase tracking-wider">
+              <span className="w-2 h-2 rounded-full bg-[#FF3A42]" />
               <span>Trademark Identity & Symbology</span>
             </div>
             <h2 className="text-xl sm:text-2xl font-bold text-neutral-900 tracking-tight">
@@ -104,8 +104,8 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
             {/* Color 1: Orange */}
             <div className="p-4 rounded-xl border border-neutral-200/80 bg-neutral-50/50 space-y-2.5">
               <div className="flex items-center gap-2.5">
-                <div className="w-5 h-5 rounded-full bg-[#F59415] shadow-xs shrink-0" />
-                <span className="text-xs font-bold text-neutral-900">#F59415 Warm Gold</span>
+                <div className="w-5 h-5 rounded-full bg-[#FDAB2B] shadow-xs shrink-0" />
+                <span className="text-xs font-bold text-neutral-900">#FDAB2B Warm Gold</span>
               </div>
               <div className="text-xs font-semibold text-neutral-800">House of New Beginning</div>
               <p className="text-[11px] text-neutral-600 leading-relaxed">
@@ -113,11 +113,11 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
               </p>
             </div>
 
-            {/* Color 2: Coral Red */}
+            {/* Color 2: Crimson Red */}
             <div className="p-4 rounded-xl border border-neutral-200/80 bg-neutral-50/50 space-y-2.5">
               <div className="flex items-center gap-2.5">
-                <div className="w-5 h-5 rounded-full bg-[#E84144] shadow-xs shrink-0" />
-                <span className="text-xs font-bold text-neutral-900">#E84144 Coral Heartbeat</span>
+                <div className="w-5 h-5 rounded-full bg-[#FF3A42] shadow-xs shrink-0" />
+                <span className="text-xs font-bold text-neutral-900">#FF3A42 Crimson Focal Point</span>
               </div>
               <div className="text-xs font-semibold text-neutral-800">Focal Transaction Node</div>
               <p className="text-[11px] text-neutral-600 leading-relaxed">
@@ -125,11 +125,11 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
               </p>
             </div>
 
-            {/* Color 3: Sky Blue */}
+            {/* Color 3: Denim Blue */}
             <div className="p-4 rounded-xl border border-neutral-200/80 bg-neutral-50/50 space-y-2.5">
               <div className="flex items-center gap-2.5">
-                <div className="w-5 h-5 rounded-full bg-[#5C96D2] shadow-xs shrink-0" />
-                <span className="text-xs font-bold text-neutral-900">#5C96D2 Sky Blue</span>
+                <div className="w-5 h-5 rounded-full bg-[#89AFE0] shadow-xs shrink-0" />
+                <span className="text-xs font-bold text-neutral-900">#89AFE0 Sky Blue</span>
               </div>
               <div className="text-xs font-semibold text-neutral-800">Agent & Society Network</div>
               <p className="text-[11px] text-neutral-600 leading-relaxed">
@@ -140,8 +140,8 @@ export const AboutTab: React.FC<AboutTabProps> = ({ onNavigateToTab }) => {
             {/* Color 4: Leaf Green */}
             <div className="p-4 rounded-xl border border-neutral-200/80 bg-neutral-50/50 space-y-2.5">
               <div className="flex items-center gap-2.5">
-                <div className="w-5 h-5 rounded-full bg-[#72A346] shadow-xs shrink-0" />
-                <span className="text-xs font-bold text-neutral-900">#72A346 Leaf Green</span>
+                <div className="w-5 h-5 rounded-full bg-[#8EB36D] shadow-xs shrink-0" />
+                <span className="text-xs font-bold text-neutral-900">#8EB36D Leaf Green</span>
               </div>
               <div className="text-xs font-semibold text-neutral-800">Statutory NOC Assurance</div>
               <p className="text-[11px] text-neutral-600 leading-relaxed">

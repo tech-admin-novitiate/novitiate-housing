@@ -81,7 +81,7 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({
         {/* Login Container with Brand Accent Line */}
         <div className="bg-white rounded-2xl border border-neutral-200 overflow-hidden shadow-xl">
           {/* Trademark 4-Color Stripe */}
-          <div className="h-1.5 w-full bg-gradient-to-r from-[#F59415] via-[#E84144] via-[#5C96D2] to-[#72A346]" />
+          <div className="h-1.5 w-full bg-gradient-to-r from-[#FDAB2B] via-[#FF3A42] via-[#89AFE0] to-[#8EB36D]" />
 
           <div className="p-8 sm:p-10 space-y-6">
             
@@ -92,7 +92,7 @@ export const AdminLoginGate: React.FC<AdminLoginGateProps> = ({
               </div>
 
               <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-100 border border-neutral-200 text-neutral-700 text-[11px] font-bold">
-                <Lock className="w-3.5 h-3.5 text-[#E84144]" />
+                <Lock className="w-3.5 h-3.5 text-[#FF3A42]" />
                 <span>Restricted Operations Console</span>
               </div>
 

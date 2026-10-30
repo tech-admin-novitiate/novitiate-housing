@@ -50,13 +50,13 @@ export const HowWeWorkTab: React.FC<HowWeWorkTabProps> = ({ onNavigateToTab }) =
       {/* The 4 Core Tenets from novitiatehousing.com (Color-coded to trademark logo nodes) */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         
-        {/* Tenet 1: Sky Blue #5C96D2 */}
-        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#5C96D2] transition-colors group">
+        {/* Tenet 1: Sky Blue #89AFE0 */}
+        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#89AFE0] transition-colors group">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#5C96D2] text-white flex items-center justify-center font-bold text-xs shadow-xs">
+            <div className="w-9 h-9 rounded-lg bg-[#89AFE0] text-white flex items-center justify-center font-bold text-xs shadow-xs">
               01
             </div>
-            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#5C96D2] transition-colors">
+            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#89AFE0] transition-colors">
               Simplifying the Process
             </h2>
           </div>
@@ -64,18 +64,18 @@ export const HowWeWorkTab: React.FC<HowWeWorkTabProps> = ({ onNavigateToTab }) =
             Novitiate Housing involves housing societies in the entire tenancy process, making it more efficient. Rather than treating the managing committee as a bureaucratic hurdle, we partner with them from listing intake to final handover.
           </p>
           <div className="pt-2 text-xs text-neutral-500 font-medium flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-[#5C96D2] shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#89AFE0] shrink-0" />
             <span>Direct society portal integration & automated committee briefings</span>
           </div>
         </div>
 
-        {/* Tenet 2: Coral Red #E84144 */}
-        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#E84144] transition-colors group">
+        {/* Tenet 2: Crimson Red #FF3A42 */}
+        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#FF3A42] transition-colors group">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#E84144] text-white flex items-center justify-center font-bold text-xs shadow-xs">
+            <div className="w-9 h-9 rounded-lg bg-[#FF3A42] text-white flex items-center justify-center font-bold text-xs shadow-xs">
               02
             </div>
-            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#E84144] transition-colors">
+            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#FF3A42] transition-colors">
               Resolving Tenancy Issues
             </h2>
           </div>
@@ -83,18 +83,18 @@ export const HowWeWorkTab: React.FC<HowWeWorkTabProps> = ({ onNavigateToTab }) =
             We conduct reference checks to verify tenant credentials and limit tenancy durations to 2–3 years to mitigate common problems. This provides stability for homeowners, minimizes wear-and-tear on society infrastructure, and prevents recurring move-in disputes.
           </p>
           <div className="pt-2 text-xs text-neutral-500 font-medium flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-[#E84144] shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#FF3A42] shrink-0" />
             <span>Employer references, past society vetting & structured multi-year agreements</span>
           </div>
         </div>
 
-        {/* Tenet 3: Warm Orange #F59415 */}
-        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#F59415] transition-colors group">
+        {/* Tenet 3: Warm Orange #FDAB2B */}
+        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#FDAB2B] transition-colors group">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#F59415] text-white flex items-center justify-center font-bold text-xs shadow-xs">
+            <div className="w-9 h-9 rounded-lg bg-[#FDAB2B] text-white flex items-center justify-center font-bold text-xs shadow-xs">
               03
             </div>
-            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#F59415] transition-colors">
+            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#FDAB2B] transition-colors">
               Empowering Agents
             </h2>
           </div>
@@ -102,18 +102,18 @@ export const HowWeWorkTab: React.FC<HowWeWorkTabProps> = ({ onNavigateToTab }) =
             Novitiate Housing provides agents with access to properties in various areas, which expands their options and potential revenue streams. Agents gain legitimate society entry authorization, pre-screened buyer leads, and guaranteed fee protection.
           </p>
           <div className="pt-2 text-xs text-neutral-500 font-medium flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-[#F59415] shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#FDAB2B] shrink-0" />
             <span>Expanded micro-market inventory across Vasai, Virar, Mumbai & Thane</span>
           </div>
         </div>
 
-        {/* Tenet 4: Leaf Green #72A346 */}
-        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#72A346] transition-colors group">
+        {/* Tenet 4: Leaf Green #8EB36D */}
+        <div className="bg-white rounded-xl border border-neutral-200 p-7 shadow-xs space-y-3 hover:border-[#8EB36D] transition-colors group">
           <div className="flex items-center gap-3">
-            <div className="w-9 h-9 rounded-lg bg-[#72A346] text-white flex items-center justify-center font-bold text-xs shadow-xs">
+            <div className="w-9 h-9 rounded-lg bg-[#8EB36D] text-white flex items-center justify-center font-bold text-xs shadow-xs">
               04
             </div>
-            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#72A346] transition-colors">
+            <h2 className="text-lg font-bold text-neutral-900 tracking-tight group-hover:text-[#8EB36D] transition-colors">
               Trusted Platform
             </h2>
           </div>
@@ -121,7 +121,7 @@ export const HowWeWorkTab: React.FC<HowWeWorkTabProps> = ({ onNavigateToTab }) =
             The company offers secure, verified property deals, avoiding "No Objection Certificate" (NOC) complications and aligning with housing societies' preferences. Every listing comes with transparent title chain validation and statutory compliance.
           </p>
           <div className="pt-2 text-xs text-neutral-500 font-medium flex items-center gap-2">
-            <CheckCircle2 className="w-4 h-4 text-[#72A346] shrink-0" />
+            <CheckCircle2 className="w-4 h-4 text-[#8EB36D] shrink-0" />
             <span>Zero NOC delays & strict alignment with society by-laws</span>
           </div>
         </div>
