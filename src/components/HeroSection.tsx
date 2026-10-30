@@ -34,18 +34,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onSearch, onExploreSoc
           {/* Subtle Tagline kicker with brand dots */}
           <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-neutral-700 bg-neutral-50 px-3.5 py-1.5 rounded-full border border-neutral-200 shadow-2xs">
             <span className="flex items-center gap-1">
-              <span className="w-2 h-2 rounded-full bg-[#F59415]" />
-              <span className="w-2 h-2 rounded-full bg-[#E84144]" />
-              <span className="w-2 h-2 rounded-full bg-[#5C96D2]" />
-              <span className="w-2 h-2 rounded-full bg-[#72A346]" />
+              <span className="w-2 h-2 rounded-full bg-[#FDAB2B]" />
+              <span className="w-2 h-2 rounded-full bg-[#FF3A42]" />
+              <span className="w-2 h-2 rounded-full bg-[#89AFE0]" />
+              <span className="w-2 h-2 rounded-full bg-[#8EB36D]" />
             </span>
-            <ShieldCheck className="w-4 h-4 text-[#72A346]" />
+            <ShieldCheck className="w-4 h-4 text-[#8EB36D]" />
             <span>Maharashtra Co-operative Societies Act Verified Network</span>
           </div>
 
           {/* Hero Headline with text-wrap: balance */}
           <h1 className="text-3xl sm:text-5xl lg:text-5xl font-extrabold text-neutral-900 tracking-tight leading-tight [text-wrap:balance]">
-            Simplifying Tenancy & Sales for <span className="text-[#E84144]">Housing Societies</span>, <span className="text-[#5C96D2]">Agents</span>, and <span className="text-[#F59415]">Buyers</span>
+            Simplifying Tenancy & Sales for <span className="text-[#FF3A42]">Housing Societies</span>, <span className="text-[#89AFE0]">Agents</span>, and <span className="text-[#FDAB2B]">Buyers</span>
           </h1>
 
           {/* Description */}

@@ -10,7 +10,7 @@ export const Footer: React.FC<FooterProps> = ({ onSelectTab }) => {
   return (
     <footer className="bg-neutral-900 text-neutral-300 border-t border-neutral-800">
       {/* Trademark Novitiate 4-Color Accent Line */}
-      <div className="h-1 w-full bg-gradient-to-r from-[#F59415] via-[#E84144] via-[#5C96D2] to-[#72A346]" />
+      <div className="h-1 w-full bg-gradient-to-r from-[#FDAB2B] via-[#FF3A42] via-[#89AFE0] to-[#8EB36D]" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           

@@ -57,6 +57,7 @@ import {
 } from '../services/storageService';
 import { logoutAdmin, changeAdminPassword, getLastLoginTime } from '../services/authService';
 import { PropertyVisual } from './PropertyVisual';
+import { NovitiateLogo } from './NovitiateLogo';
 
 interface AdminPortalProps {
   properties: Property[];
@@ -440,9 +441,12 @@ export const AdminPortal: React.FC<AdminPortalProps> = ({
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
               <span>Novitiate Housing Operations Console · Authenticated</span>
             </div>
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight mt-0.5">
-              Admin Management Portal
-            </h1>
+            <div className="flex items-center gap-3 mt-1">
+              <NovitiateLogo size="sm" variant="mark" />
+              <h1 className="text-2xl sm:text-3xl font-extrabold text-neutral-900 tracking-tight">
+                Admin Management Portal
+              </h1>
+            </div>
             <p className="text-xs sm:text-sm text-neutral-600">
               Manage society inventory, monitor live CRM lead pipelines with automated sequences, and inspect conversion funnel metrics.
             </p>
